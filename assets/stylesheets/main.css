@@ -49,6 +49,25 @@ table {
 
 /*
   ==========================
+  Box model
+  ==========================
+*/
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+/*
+  ==========================
   Clearfix
   ==========================
 */
@@ -73,6 +92,11 @@ table {
   width: 960px;
 }
 
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 /*
   ==========================
   Nav
@@ -84,6 +108,7 @@ table {
   padding: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
+  font-size: 16px;
 }
 
 .nav a {
@@ -106,10 +131,100 @@ table {
 
 header {
   margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+header h1,
+header h3 {
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  color: #383838;
 }
 
 header h1 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 48px;
+  font-size: 72px;
+}
+
+header h3 {
+  line-height: 72px;
+  font-size: 36px;
+}
+
+header h3 #word-1 {
+  color: #505AEC;
+}
+
+header h3 #word-2 {
+  color: #AC41D2;
+}
+
+header h3 #word-3 {
+  color: #FFBB1B;
+}
+
+/*
+  ==========================
+  Footer
+  ==========================
+*/
+
+footer {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  border-top: 1px solid #ddd;
   text-align: center;
+}
+
+footer .copy {
+  font-family: 'Raleway', sans-serif;
+  color: #383838;
+}
+
+/*
+  ==========================
+  Columns
+  ==========================
+*/
+
+.col-1-3 {
+  display: inline-block;
+  width: 33.33%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+/*
+  ==========================
+  Home content
+  ==========================
+*/
+
+.home-content {
+  padding-bottom: 60px; /* Footer height */
+}
+
+.home-content h2,
+.home-content p {
+  font-family: 'Raleway', sans-serif;
+  color: #454545;
+}
+
+.home-content h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.home-content p {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0px 10px;
+  line-height: 22px;
 }
