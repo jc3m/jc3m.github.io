@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -117,10 +114,16 @@ body {
   color: black;
   text-decoration: none;
   padding: 0 12px 10px 12px;
+	transition: .5s;
+	border-bottom: 2px solid white;
 }
 
 .nav a:hover {
   border-bottom: 2px solid black;
+}
+
+.nav .active {
+	border-bottom: 2px solid black;
 }
 
 /*
@@ -176,6 +179,7 @@ header h3 #word-3 {
   margin: 35px 15px 15px 15px;
   border: 2px solid #333;
   text-transform: uppercase;
+	transition: .3s;
 }
 
 .header-buttons .btn:hover {
@@ -191,11 +195,11 @@ header h3 #word-3 {
 
 footer {
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 5px;
   width: inherit;
   position: absolute;
   bottom: 0;
-  height: 60px;
+  height: 75px;
   border-top: 1px solid #ddd;
   text-align: center;
 }
@@ -203,6 +207,48 @@ footer {
 footer .copy {
   font-family: 'Raleway', sans-serif;
   color: #383838;
+}
+
+/* Social Icons */
+
+.footer-social-icons {
+	margin-bottom: 5px;
+}
+
+.social-icon {
+	color: #fff;
+}
+
+ul.social-icons {
+	margin-top: 10px;
+
+}
+
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+}
+
+.social-icons a {
+	color: #686868;
+	text-decoration: none;
+}
+
+.fa {
+	font-size: 28px;
+	padding: 0px 7px 7px 7px;
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
+.fa-github:hover {
+	color: #333;
+}
+
+.fa-linkedin:hover {
+	color: #007bb5;
 }
 
 /*
@@ -225,7 +271,7 @@ footer .copy {
 */
 
 .home-content {
-  padding-bottom: 60px; /* Footer height */
+  padding-bottom: 75px; /* Footer height */
 }
 
 .home-content h2,
