@@ -120,6 +120,7 @@ html {
   padding: 0 12px 10px 12px;
 	transition: .5s;
 	border-bottom: 2px solid white;
+	font-weight: 100;
 }
 
 .nav a:hover {
@@ -354,10 +355,6 @@ ul.social-icons {
 	font-size: 28px;
 	color: #5f5f5f;
 	margin: 30px 0;
-	/* text-align: right;
-	margin-top: 30px;
-	margin-right: 70px;
-	/* float: right; */
 }
 
 .about-body {
@@ -369,10 +366,29 @@ ul.social-icons {
 	line-height: 24px;
 }
 
+.about-hash-name {
+  color: #505AEC;
+}
+
 .about-body li {
-	margin-top: 18px;
+	margin-left: 20px;
 }
 
 .about-body b {
 	font-weight: 400;
+}
+
+.about-body .about-key,
+.about-body .about-hash-name {
+	font-weight: 600;
+}
+
+ul p {
+	font-weight: 400;
+	color: #40A61B;
+}
+
+ul li b {
+	font-weight: bold;
+	color: #AC41D2;
 }
