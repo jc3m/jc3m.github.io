@@ -429,7 +429,7 @@ ul li b {
 	text-align: center;
 	position: absolute;
 	padding-top: 60px;
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: rgba(0, 0, 0, 0.75);
 	z-index: 1000;
 	font-family: "Oswald", sans-serif;
 	font-size: 28px;
@@ -445,9 +445,9 @@ ul li b {
 	position: relative;
 	display: inline-block;
 	border: 2px solid #fff;
-	font-size: 20px;
+	font-size: 16px;
 	color: white;
-	padding: 5px 8px;
+	padding: 7px 25px 9px 25px;
 	top: 50px;
 	text-decoration: none;
 }
@@ -455,6 +455,8 @@ ul li b {
 .portfolio-item .item-in a:hover,
 .portfolio-item .item-in a:active,
 .portfolio-item .item-in a:focus {
+	color: #000;
+	background-color: #fff;
 	text-decoration: none;
 }
 
