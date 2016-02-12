@@ -308,7 +308,7 @@ ul.social-icons {
 */
 
 .home-content {
-  /*padding-bottom: 75px; /* Footer height */
+  /*padding-bottom: 75px; /* ght */
 	padding-bottom: 100px;
 }
 
@@ -391,4 +391,73 @@ ul p {
 ul li b {
 	font-weight: bold;
 	color: #AC41D2;
+}
+
+/*
+  ==========================
+  Portfolio content
+  ==========================
+*/
+
+.col-item {
+	width: 250px;
+	display: inline-block;
+}
+
+.portfolio-display {
+	margin-top: 30px;
+}
+
+.portfolio-image {
+	width: 100%;
+	position: absolute;
+}
+
+.portfolio-item {
+	margin-bottom: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;
+	height: 250px;
+}
+
+.portfolio-item .item-in {
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	text-align: center;
+	position: absolute;
+	padding-top: 60px;
+	background-color: rgba(0, 0, 0, 0.65);
+	z-index: 1000;
+	font-family: "Oswald", sans-serif;
+	font-size: 28px;
+	display: none;
+}
+
+.portfolio-item .item-in h1 {
+	position: relative;
+	display: block;
+}
+
+.portfolio-item .item-in a {
+	position: relative;
+	display: inline-block;
+	border: 2px solid #fff;
+	font-size: 20px;
+	color: white;
+	padding: 5px 8px;
+	top: 50px;
+	text-decoration: none;
+}
+
+.portfolio-item .item-in a:hover,
+.portfolio-item .item-in a:active,
+.portfolio-item .item-in a:focus {
+	text-decoration: none;
+}
+
+.bottom-fix {
+	padding-bottom: 100px;
 }
