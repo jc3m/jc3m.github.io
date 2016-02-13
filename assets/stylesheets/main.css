@@ -439,6 +439,7 @@ ul li b {
 .portfolio-item .item-in h1 {
 	position: relative;
 	display: block;
+	top: 10px;
 }
 
 .portfolio-item .item-in a {
@@ -448,7 +449,7 @@ ul li b {
 	font-size: 16px;
 	color: white;
 	padding: 7px 25px 9px 25px;
-	top: 50px;
+	top: 48px;
 	text-decoration: none;
 }
 

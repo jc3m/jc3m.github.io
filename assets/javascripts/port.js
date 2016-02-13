@@ -1,19 +1,27 @@
 $(document).ready(function() {
   $(".portfolio-item").hover(function() {
-    $(".item-in", this).fadeIn({queue: false, duration: 300});
+    $("this").clearQueue();
+    $(".item-in", this).stop(true);
+    $("h1", this).stop(true);
+    $("a", this).stop(true);
+    $(".item-in", this).fadeTo(300, 1.0);
     $("h1", this).animate({
-      top: "+=12px"
+      top: "18px"
     }, 320);
     $("a", this).animate({
-      top: "-=18px"
+      top: "32px"
     }, 320);
   }, function() {
-    $(".item-in", this).fadeOut({queue: false, duration: 300});
+    $("this").clearQueue();
+    $(".item-in", this).stop(true);
+    $("h1", this).stop(true);
+    $("a", this).stop(true);
+    $(".item-in", this).fadeTo(300, 0);
     $("h1", this).animate({
-      top: "-=12px"
+      top: "10px"
     }, 320);
     $("a", this).animate({
-      top: "+=18px"
+      top: "48px"
     }, 320);
   });
 });
