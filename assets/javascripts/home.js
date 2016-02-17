@@ -16,9 +16,9 @@ age.innerHTML = a + " years";
 var time = 250;
 
 $(document).ready(function() {
-  $(".nav a").each(function() {
+  /*$(".nav a").each(function() {
     $(this).css("opacity", 0);
-  });
+  });*/
   $("header").css("display", "none");
 
   setTimeout(function() {
@@ -27,14 +27,16 @@ $(document).ready(function() {
 });
 
 function fadeIn() {
-  $(".nav a").each(function() {
+  /*$(".nav a").each(function() {
     var $link = $(this);
 
     setTimeout(function() {
-      $link.fadeTo(400, 1.0);
+      $link.fadeTo(100, 0.0, function() {
+        $link.fadeTo(100, 1.0);
+      });
     }, time);
     time += 125;
-  });
+  });*/
 
   setTimeout(function() {
     $("header").animate({
@@ -44,5 +46,5 @@ function fadeIn() {
       duration: 700
     });
     $("header").fadeTo(900, 1.0);
-  }, 1400);
+  }, 100);
 }
