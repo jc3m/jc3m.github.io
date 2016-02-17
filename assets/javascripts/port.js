@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $(".portfolio-display").css("opacity", 0).fadeTo(500, 1.0);
+
   $(".portfolio-item").hover(function() {
     $("this").clearQueue();
     $(".item-in", this).stop(true);

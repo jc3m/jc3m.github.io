@@ -143,6 +143,8 @@ html {
 }
 
 header {
+	top: -30px;
+	position: relative;
 	display: block;
 	margin-top: 20vh;
 	overflow: hidden;
@@ -349,6 +351,10 @@ ul.social-icons {
   About content
   ==========================
 */
+
+.about-content {
+	opacity: 0;
+}
 
 .about-top {
 	font-family: 'Raleway', sans-serif;
