@@ -44,6 +44,10 @@ table {
 	border-spacing: 0;
 }
 
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
 /*
   ==========================
   Box model
@@ -469,4 +473,16 @@ ul li b {
 
 .bottom-fix {
 	padding-bottom: 100px;
+}
+
+/*
+  ==========================
+  Contact content
+  ==========================
+*/
+
+.contact-body {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
 }
